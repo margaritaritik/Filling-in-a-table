@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tablefx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Button fx:id="fileButton" mnemonicParsing="false" onAction="#OnButtonFileClick" prefHeight="31.0" prefWidth="570.0" text="ПОИСК" textFill="#19184b">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font></Button>
+
+    <GridPane>
+        <TextField fx:id="nameFile" prefHeight="27.0" prefWidth="305.0" GridPane.columnIndex="1">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font></TextField>
+        <Label fx:id="welcomeText" prefHeight="28.0" prefWidth="255.0" text="Введите название файла" textFill="#0d89b5">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font></Label>
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+
+
+    <GridPane>
+        <Button fx:id="buttonInsert" mnemonicParsing="false" onAction="#OnButtonInsertClick" prefHeight="26.0" prefWidth="400.0" text="Заполнить" textFill="#0854a1">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+        </Button>
+        <Button fx:id="buttonDelete" alignment="CENTER" mnemonicParsing="false" onAction="#OnButtonDeleteClick" prefHeight="26.0" prefWidth="400.0" text="Очистить" textFill="#1962a6" GridPane.columnIndex="3">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+
+   <TableView fx:id="tableUsers" prefHeight="272.0" prefWidth="479.0">
+     <columns>
+       <TableColumn fx:id="idColumn" prefWidth="72.79998588562012" text="№" />
+       <TableColumn fx:id="textColumn" prefWidth="211.20001983642578" text="TEXT" />
+         <TableColumn fx:id="pictureColumn" prefWidth="207.199951171875" text="PICTURE" />
+     </columns>
+   </TableView>
+</VBox>

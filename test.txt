@@ -1,0 +1,12 @@
+1
+Жить
+pictures/mult.png
+2
+или не жить
+pictures/picture1.png
+3
+вот в чем
+pictures/picture3.png
+4
+вопрос
+pictures/picture1.png
