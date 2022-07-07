@@ -1,45 +1,39 @@
 package com.example.tablefx;
 
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-
 //класс для формирования данных, с помощью которых будет заполнена таблица(в данном случае два атрибута:id и text)
 public class User {
-    private int id;
-    private String text;
-    private ImageView picture;
+    private String Extension;
+    private String SizeFile;
+    private Object Content;
+    private Object HeightImg;
+    private Object WidthImg;
+    private Object Countbit;
 
-    public User(int id, String text, ImageView picture) {
-        this.id = id;
-        this.text = text;
-        this.picture=picture;
+    public User(String Extension, String SizeFile, Object Content,Object HeightImg,Object WidthImg,Object Countbit) {
+        this.Extension = Extension;
+        this.SizeFile=SizeFile;
+        this.Content = Content;
+        this.HeightImg=HeightImg;
+        this.WidthImg=WidthImg;
+        this.Countbit=Countbit;
     }
+    public void SetExtension(String value) { this.Extension = value; }
+    public String getExtension() { return Extension; }
 
-    public User() {
-    }
+    public void SetSizeFile(String value) { this.SizeFile = value; }
+    public String getSizeFile() { return SizeFile; }
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    public void SetContent(Object value) { this.Content = value; }
+    public Object getContent() { return Content; }
 
-    public String getText() {
-        return text;
-    }
+    public void SetHeightImg(Object value) { this.HeightImg = value; }
+    public Object getHeightImg() { return HeightImg; }
 
-    public void setText(String text) {
-        this.text = text;
-    }
+    public void SetCountbit(Object value) { this.Countbit = value; }
+    public Object getCountbit() { return Countbit; }
 
-    public ImageView getPicture() {
-        return picture;
-    }
-
-    public void setPicture(ImageView picture) {
-        this.picture = picture;
-    }
+    public void SetWidthImg(Object value) { this.WidthImg = value; }
+    public Object getWidthImg() { return WidthImg; }
 }
 
